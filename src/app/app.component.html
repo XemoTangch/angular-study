@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!--<div style="text-align:center">
   <h1>
     Welcome to {{title}}!
   </h1>
@@ -16,5 +16,36 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
+</ul>-->
+
+
+<!-- <h1>{{title}}</h1>
+<h2>{{hero.name}} 资料!</h2>
+<div><label>id: </label>{{hero.id}}</div>
+<div><label>name: </label>{{hero.name}}</div>
+
+
+<div>
+	<label>name:</label>
+	<input [(ngModel)]="hero.name" placeholder="name" >
+</div>-->
+
+
+<h2>{{title}}</h2>
+<ul class="heroes">
+	<li *ngFor="let hero of heroes"
+		[class.selected]="hero === selectedHero"
+		(click)="onSelect(hero)" >
+		<span class="badge">{{hero.id}}</span> {{hero.name}}
+	</li>
 </ul>
+
+<div *ngIf="selectedHero">
+	<h2>{{selectedHero.name}} details!</h2>
+	<div><label>id: </label>{{selectedHero.id}}</div>
+	<div>
+		<label>name: </label>
+		<input [(ngModel)]="selectedHero.name" placeholder="name"/>
+	</div>
+</div>
 
