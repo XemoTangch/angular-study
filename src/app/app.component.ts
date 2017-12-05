@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
+    // 选择器
     selector: 'app-root',
+    // 模板内容，templateUrl的值为html文件路径
     template: `
         <h1>{{title}}</h1>
         <nav>
@@ -13,6 +15,7 @@ import { Component } from '@angular/core';
     `
 })
 
+// 主组件
 export class AppComponent {
     title = '英雄之名';
 }

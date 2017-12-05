@@ -24,6 +24,7 @@ import { RouterModule } from '@angular/router';
   imports: [
       BrowserModule,
       FormsModule,
+      // 定义路由path为空时重定向到dashboard
       RouterModule.forRoot([
           { path: 'heroes', component: HeroesComponent },
           { path: 'dashboard', component: DashboardComponent },
