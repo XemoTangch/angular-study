@@ -29,6 +29,7 @@ const HEROES: Hero[] = [
     styleUrls: ['./app.component.css']
 })
 
+// 必须实现OnInit接口
 export class HeroesComponent implements OnInit {
     title = '英雄之旅';
     selectedHero: Hero;
