@@ -15,6 +15,7 @@ import { HeroService } from './hero.service';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
+    // declarations数组包含应用中属于该模块的组件、管道和指令的列表。 组件在被其它组件引用之前必须先在一个模块中声明过
   declarations: [
       AppComponent,
       HeroDetailComponent,
@@ -31,6 +32,7 @@ import { RouterModule } from '@angular/router';
           { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
       ])
   ],
+    // 注册HeroService提供商，用于注入器创建服务对象，创建AppComment组件时，会创建HeroService的新实例
   providers: [
       HeroService
   ],

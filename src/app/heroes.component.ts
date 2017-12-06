@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { Hero } from './hero/hero';
 import { HeroService } from './hero.service';
 
 /*
@@ -17,10 +18,10 @@ const HEROES: Hero[] = [
 ];*/
 
 // @Component下面只能放一个类？
-export class Hero {
-    id: number;
-    name: string;
-}
+// export class Hero {
+//     id: number;
+//     name: string;
+// }
 
 @Component({
     selector: 'app-my-heroes',
@@ -32,6 +33,7 @@ export class HeroesComponent implements OnInit {
     title = '英雄之旅';
     selectedHero: Hero;
     heroes: Hero[];
+    // 注入HeroService
     constructor(private heroService: HeroService) { }
     // 初始化后钩子，获取数据
     ngOnInit(): void {

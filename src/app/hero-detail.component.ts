@@ -9,6 +9,7 @@ import { Hero } from './hero/hero';
 
 
 export class HeroDetailComponent {
+    // @Input() 用来表明该属性是可输入的属性
     @Input() hero: Hero;
 }
 
