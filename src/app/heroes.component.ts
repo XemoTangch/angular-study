@@ -42,6 +42,7 @@ export class HeroesComponent implements OnInit {
     }
     // 获取数据方法
     getHeroes(): void {
+        // getHeroes()返回promise对象，then回调中返回数据
         this.heroService.getHeroes().then(heroes => this.heroes = heroes);
         // this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
         // this.heroes = this.heroService.getHeroes();
