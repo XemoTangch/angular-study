@@ -17,11 +17,12 @@ const HEROES: Hero[] = [
     { id: 20, name: 'Tornado' }
 ];*/
 
-// @Component下面只能放一个类？
+// @Component下面只能放一个类？no
 // export class Hero {
 //     id: number;
 //     name: string;
 // }
+
 
 @Component({
     selector: 'app-my-heroes',
