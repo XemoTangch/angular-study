@@ -17,7 +17,7 @@ const HEROES: Hero[] = [
     { id: 20, name: 'Tornado' }
 ];*/
 
-// @Component下面只能放一个类？no2
+// @Component下面只能放一个类？no3
 // export class Hero {
 //     id: number;
 //     name: string;
