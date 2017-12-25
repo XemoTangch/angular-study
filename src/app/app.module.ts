@@ -27,6 +27,7 @@ import { RouterModule } from '@angular/router';
       FormsModule,
       // 定义路由path为空时重定向到dashboard
       RouterModule.forRoot([
+          // path 用来匹配浏览器地址栏中的地址，component 需要的组件
           { path: 'heroes', component: HeroesComponent },
           { path: 'dashboard', component: DashboardComponent },
           { path: '', redirectTo: '/dashboard', pathMatch: 'full' }

@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
             <a routerLink="/dashboard">Dashboard</a>
             <a routerLink="/heroes">Heroes</a>
         </nav>
+        <!-- RouterOutlet 是由RouterModule提供的指令之一，将激活的组件显示在<router-outlet> -->
         <router-outlet></router-outlet>
         <!--<app-my-heroes></app-my-heroes>-->
     `,
