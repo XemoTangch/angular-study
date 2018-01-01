@@ -30,7 +30,8 @@ import { RouterModule } from '@angular/router';
           // path 用来匹配浏览器地址栏中的地址，component 需要的组件
           { path: 'heroes', component: HeroesComponent },
           { path: 'dashboard', component: DashboardComponent },
-          { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
+          { path: '', redirectTo: '/heroes', pathMatch: 'full' },
+          { path: 'detail/:id', component: HeroesComponent },
       ])
   ],
     // 注册HeroService提供商，用于注入器创建服务对象，创建AppComment组件时，会创建HeroService的新实例
